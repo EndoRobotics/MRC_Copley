@@ -17,6 +17,7 @@
 2. compile the file by make
 
    ```bash
+   :~/. $ apt-get install -y git make libpcap-dev build-essential 
    :~/MRC_Copley_test $ make
    ```
 3. You should see this message if its sucessed ``[SUCCESS] All targets built successfully!``
