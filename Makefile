@@ -1,9 +1,8 @@
 # Toolchain and flags
 # CC := gcc
 # CXX := g++
-CC ?= ../../../CUHK-EndoR/Software/CrossCompiler/arm-EndoROSv2-linux-gnueabihf_sdk-buildroot/bin/arm-EndoROSv2-linux-gnueabihf-gcc
 CXX ?= ../../../CUHK-EndoR/Software/CrossCompiler/arm-EndoROSv2-linux-gnueabihf_sdk-buildroot/bin/arm-EndoROSv2-linux-gnueabihf-g++
-CFLAGS := -Wall -Wextra -O2 -std=gnu11
+CC ?= $(CXX)
 CXXFLAGS := -Wall -Wextra -O2 -std=c++11
 INCLUDES := -Isrc -Isrc/osal -Isrc/osal/linux -Isrc/soem -Isrc/oshw/linux
 LIBS := -lpcap
