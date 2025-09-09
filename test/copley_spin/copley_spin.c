@@ -8,6 +8,8 @@
 // #define EC_TIMEOUTRXM 500 // Not defined, using EC_TIMEOUTMON for all timeouts
 
 char IOmap[4096];
+// Common velocity for all slaves
+int32_t velocity = 40960; // Use the value that worked for your motor
 
 // Object indexes for CiA 402
 #define CONTROLWORD        0x6040
@@ -159,9 +161,6 @@ int main()
     return 1;
   }
   printf("All slaves in OPERATIONAL state.\n");
-
-  // Common velocity for all slaves
-  int32_t velocity = 40960; // Use the value that worked for your motor
 
   // --- Configuration and Enable Operation for Each Slave ---
   for (int i = 0; i < num_slaves_to_control; i++)
