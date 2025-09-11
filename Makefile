@@ -1,8 +1,10 @@
 # Toolchain and flags
-CC := gcc
-CXX := g++
+# CC := gcc
+# CXX := g++
+CC := /root/build/buildroot/output/host/bin/arm-EndoROSv2-linux-gnueabihf-gcc
+CXX := /root/build/buildroot/output/host/bin/arm-EndoROSv2-linux-gnueabihf-g++
 CFLAGS := -Wall -Wextra -O2 -std=gnu11
-CXXFLAGS := -Wall -Wextra -O2 -std=c++11
+CXXFLAGS := -Werror -Wextra -O2 -std=c++11
 INCLUDES := -Isrc -Isrc/osal -Isrc/osal/linux -Isrc/soem -Isrc/oshw/linux
 LIBS := -lpcap
 
