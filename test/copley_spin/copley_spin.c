@@ -5,7 +5,7 @@
 
 #define IFNAME        "eth0"
 #define EC_TIMEOUTMON   1000   // 1000 ms is more stable
-// #define EC_TIMEOUTRXM 500 // Not defined, using EC_TIMEOUTMON for all timeouts
+// #define EC_TIMEOUTRXM 500  // Not defined, using EC_TIMEOUTMON for all timeouts
 
 char IOmap[4096];
 // Common velocity for all slaves
